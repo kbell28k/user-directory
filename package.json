@@ -1,0 +1,42 @@
+{
+  "name": "user-directory",
+  "version": "1.0.0",
+  "description": "An employee directory with React. Business context: An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name. User story: As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbell28k/user-directory.git"
+  },
+  "author": "Kayla Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbell28k/user-directory/issues"
+  },
+  "homepage": "https://github.com/kbell28k/user-directory#readme"
+}
