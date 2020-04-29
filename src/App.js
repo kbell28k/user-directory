@@ -3,15 +3,16 @@ const data = require("./data");
 
 console.log(data);
 
-class Ap extends Component {
+class App extends Component {
   state = { dir: data };
+
   handleFirstAZ = (_) => {
     let dir = JSON.parse(JSON.stringify(this.state.dir));
     dir.sort((a, b) => a.first_name.localeCompare(b.first_name));
     this.setState({ dir: dir });
   };
 
-  handleFirstAZ = (_) => {
+  handleFirstZA = (_) => {
     let dir = JSON.parse(JSON.stringify(this.state.dir));
     dir.sort((b, a) => a.first_name.localeCompare(b.first_name));
     this.setState({ dir: dir });
@@ -23,7 +24,7 @@ class Ap extends Component {
     this.setState({ dir: dir });
   };
 
-  handleLastAZ = (_) => {
+  handleLastZA = (_) => {
     let dir = JSON.parse(JSON.stringify(this.state.dir));
     dir.sort((b, a) => a.last_name.localeCompare(b.last_name));
     this.setState({ dir: dir });
@@ -32,8 +33,8 @@ class Ap extends Component {
   handleStateFilter = ({ target }) => {
     let dir;
     switch (target.value) {
-      case "CA":
-        dir = data.filter((a) => a.state === "California");
+      case "CO":
+        dir = data.filter((a) => a.state === "Colorado");
         break;
       case "AZ":
         dir = data.filter((a) => a.state === "Arizona");
@@ -69,14 +70,12 @@ class Ap extends Component {
               className="uk-button uk-button-default uk-button-small"
               onClick={this.handleFirstAZ}
             >
-              {" "}
               A to Z
             </button>
             <button
               className="uk-button uk-button-default uk-button-small"
-              onClick={this.handleFirstAZ}
+              onClick={this.handleFirstZA}
             >
-              {" "}
               Z to A
             </button>
             Sort by Last Name:
@@ -84,17 +83,15 @@ class Ap extends Component {
               className="uk-button uk-button-default uk-button-small"
               onClick={this.handleLastAZ}
             >
-              {" "}
               A to Z
             </button>
             <button
               className="uk-button uk-button-default uk-button-small"
-              onClick={this.handleLastAZ}
+              onClick={this.handleLastZA}
             >
-              {" "}
               Z to A
             </button>
-            Filter by state:
+            Filter by State:
             <select
               className="uk-select uk-form-width-small"
               defaultValue={this.state.selectValue}
@@ -102,7 +99,7 @@ class Ap extends Component {
             >
               <option value="All">All</option>
               <option value="AZ">Arizona</option>
-              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
               <option value="NV">Nevada</option>
               <option value="OR">Oregon</option>
               <option value="WA">Washington</option>

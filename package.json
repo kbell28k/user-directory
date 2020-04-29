@@ -1,8 +1,16 @@
 {
-  "name": "user-directory",
-  "version": "1.0.0",
-  "description": "An employee directory with React. Business context: An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name. User story: As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.",
-  "main": "index.js",
+  "homepage": "https://preyx.github.io/employee-directory/",
+  "name": "employee-directory",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -28,15 +36,5 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kbell28k/user-directory.git"
-  },
-  "author": "Kayla Bell",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kbell28k/user-directory/issues"
-  },
-  "homepage": "https://github.com/kbell28k/user-directory#readme"
+  }
 }
